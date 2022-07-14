@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detalle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            Hora actual: <span id="hora"></span>
+        </div>
+        <button onclick=window.location.href="./Index.html">Cerrar sesion</button>
+        <p>Usuario logeado: <span id="user"></span></p>
+        
+    </header>
+   
+    <p>Ingrese el id del personaje que desea conocer</p>
+    <br>
+    <div id="personaje">
+        <label>Personaje</label>
+        <input type="text" id="idInput">
+        <button onclick=VerifInput()>Buscar personaje</button>
+    </div>
+    <div id="Errorinput"></div>
+    <table class="container">
+        <thead>
+            <tr>
+                <th>
+                    <h1>id</h1>
+                </th>
+                <th>
+                    <h1>name</h1>
+                </th>
+                <th>
+                    <h1> status </h1>
+                </th>
+                <th>
+                    <h1> species </h1>
+                </th>
+                <th>
+                    <h1> type </h1>
+                </th>
+                <th>
+                    <h1> gender </h1>
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="id"></td>
+                <td id="name" onclick=VerImagen()></td>
+                <td id="status"></td>
+                <td id="species"></td>
+                <td id="type"></td>
+                <td id="gender"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="imagen">
+        
+
+    </div>
+</body>
+<script src="detalle.js"></script>
+</html>

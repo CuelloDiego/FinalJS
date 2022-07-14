@@ -1,0 +1,29 @@
+*{
+    background-color: #1F2739;
+    color: #A7A1AE;
+    align-items: center;
+    text-align: center;
+}
+
+#header{
+    display: inline-flex;
+    text-align: center;
+    justify-content:center;
+    width: 80%;
+    
+}
+#header p,div,button{
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: inline-block;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+.container th,td{
+    width: 18%;
+}
